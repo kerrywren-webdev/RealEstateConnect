@@ -374,6 +374,7 @@
     left: auto;
     right: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scaleX(0);
     background-color: #fff;
     height: 100vh;
@@ -479,6 +480,7 @@
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
+    visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
@@ -538,7 +540,7 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     cursor: pointer;
     appearance: none;
   }
@@ -822,6 +824,57 @@
   }
   body.dark-mode #cs-navigation .cs-li-link:before {
     background-color: var(--primaryLight);
+  }
+}
+/* Search Bar Styles */
+.cs-search-form {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.cs-search-input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+.cs-search-input:focus {
+  border-color: var(--primary);
+}
+
+.cs-search-button {
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.cs-search-button img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.cs-search-button:hover {
+  background-color: var(--primaryLight);
+}
+
+/* Adjust layout for mobile */
+@media only screen and (max-width: 63.9375rem) {
+  .cs-search-form {
+    width: 100%;
+    max-width: none;
+  }
+  .cs-search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .cs-search-button {
+    padding: 0.5rem;
   }
 }
 /*-- -------------------------- -->

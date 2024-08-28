@@ -1,0 +1,169 @@
+/* PAGE-SPECIFIC STYLES FOR THE LOGIN PAGE */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  .login-container {
+    max-width: 100%;
+    margin: 100px auto 50px auto; /* Increased top margin to 100px */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffba19;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-container button:hover {
+    background-color: #001f3f;
+  }
+  .signup-text {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .signup-text a {
+    color: #001f3f;
+    text-decoration: none;
+  }
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  .social-login {
+    margin: 15px 0;
+  }
+  .social-login button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .social-login button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .social-login .btn-google {
+    background-color: #001f3f;
+    color: #fff;
+  }
+  .social-login .btn-facebook {
+    background-color: #001f3f;
+    color: #fff;
+  }
+  .social-login .btn-apple {
+    background-color: #001f3f;
+    color: #fff;
+  }
+  .social-login button:hover {
+    opacity: 0.9;
+  }
+  hr {
+    margin: 20px 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  .login-container {
+    max-width: 80%;
+    margin: 120px auto 50px auto; /* Increased top margin to 120px */
+    padding: 30px;
+  }
+  .form-group input {
+    padding: 10px;
+  }
+  .login-container button {
+    padding: 12px;
+  }
+  .social-login button {
+    padding: 12px;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  .login-container {
+    max-width: 60%;
+    margin: 150px auto 50px auto; /* Increased top margin to 150px */
+  }
+}
+/* Large Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  .login-container {
+    max-width: 50%;
+    margin: 180px auto 50px auto; /* Increased top margin to 180px */
+    padding: 40px;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode .login-container {
+    background-color: #333;
+    border-color: #555;
+  }
+  body.dark-mode .login-container h2,
+  body.dark-mode .form-group label {
+    color: #fff;
+  }
+  body.dark-mode .form-group input {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  body.dark-mode .login-container button {
+    background-color: #ffba19;
+    color: #fff;
+  }
+  body.dark-mode .login-container button:hover {
+    background-color: #001f3f;
+  }
+  body.dark-mode .signup-text {
+    color: #fff;
+  }
+  body.dark-mode .signup-text a {
+    color: #1e90ff;
+  }
+  body.dark-mode .signup-text a:hover {
+    text-decoration: underline;
+  }
+  body.dark-mode .social-login button {
+    background-color: #222;
+  }
+  body.dark-mode .social-login button.btn-google {
+    background-color: #001f3f;
+  }
+  body.dark-mode .social-login button.btn-facebook {
+    background-color: #001f3f;
+  }
+  body.dark-mode .social-login button.btn-apple {
+    background-color: #001f3f;
+  }
+  body.dark-mode .social-login button:hover {
+    opacity: 0.8;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

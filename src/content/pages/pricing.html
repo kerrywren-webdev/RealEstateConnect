@@ -1,0 +1,64 @@
+---
+title: 'Pricing | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'pricing/'
+eleventyNavigation:
+    key: Pricing
+    order: 800
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/pricing.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-1260">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Pricing Options for Licensed Real Estate Agents</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-popular-tag">Recommended</span>
+                <picture class="cs-picture">
+                    <img class="cs-picture-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/walking.svg" alt="checkmark" width="44" height="44">
+                </picture>
+                <span class="cs-package">Monthly</span>
+                <span class="cs-price">
+                    $25
+                    <span class="cs-duration">/month</span>
+                </span>
+                <p class="cs-item-text">
+                    Pay per month, cancel any time.
+                </p>
+                <a href="" class="cs-button-transparent">Get Started</a>
+            </li>
+            <li class="cs-item cs-popular">
+                <span class="cs-popular-tag">Recommended</span>
+                <picture class="cs-picture">
+                    <img class="cs-picture-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/badge.svg" alt="checkmark" width="44" height="44">
+                </picture>
+                <span class="cs-package">Yearly</span>
+                <span class="cs-price">
+                    $250
+                    <span class="cs-duration">/year</span>
+                </span>
+                <p class="cs-item-text">
+                    Pay once per year.
+                </p>
+                <a href="" class="cs-button-transparent">Get Started</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}

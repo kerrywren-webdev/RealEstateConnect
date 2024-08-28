@@ -1,0 +1,89 @@
+---
+title: 'Login'
+permalink: 'login/'
+eleventyNavigation:
+    key: Login
+    order: 700
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <!-- Add Auth0 JavaScript SDK here -->
+    <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- Standard Email/Password Sign-In -->
+        <form id="login-form" method="POST" action="/login">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Sign in</button>
+        </form>
+
+        <hr>
+
+        <!-- Link to Pricing Page -->
+        <p class="signup-text">
+            Don't have an account? <a href="/about/">Sign up here.</a>
+        </p>
+
+        <hr>
+
+        <!-- Sign-In with Google -->
+        <div class="social-login">
+            <button id="google-signin" class="btn-google" onclick="handleGoogleSignIn()">
+                <img src="/assets/images/google-logo.png" alt="Google logo"> Sign in with Google
+            </button>
+        </div>
+
+        <!-- Sign-In with Facebook -->
+        <div class="social-login">
+            <button id="facebook-signin" class="btn-facebook" onclick="handleFacebookSignIn()">
+                <img src="/assets/images/facebook-logo.png" alt="Facebook logo"> Sign in with Facebook
+            </button>
+        </div>
+
+        <!-- Sign-In with Apple (For Mobile Apps) -->
+        <div class="social-login">
+            <button id="apple-signin" class="btn-apple" onclick="handleAppleSignIn()">
+                <img src="/assets/images/apple-logo.png" alt="Apple logo"> Sign in with Apple
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function handleGoogleSignIn() {
+            // Add logic to handle Google sign-in using Auth0 or your preferred auth service
+            auth0.authorize({
+                connection: 'google-oauth2'
+            });
+        }
+
+        function handleFacebookSignIn() {
+            // Add logic to handle Facebook sign-in using Auth0 or your preferred auth service
+            auth0.authorize({
+                connection: 'facebook'
+            });
+        }
+
+        function handleAppleSignIn() {
+            // Add logic to handle Apple sign-in (for mobile apps) using Auth0 or your preferred auth service
+            auth0.authorize({
+                connection: 'apple'
+            });
+        }
+    </script>
+{% endblock %}

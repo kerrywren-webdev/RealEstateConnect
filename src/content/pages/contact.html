@@ -1,5 +1,5 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
+title: 'Contact | Real Estate Connect'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
@@ -17,83 +17,53 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Contact                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
+<section id="contact-1970">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Need Help?<br> Have a Suggestion? <br> Contact Us!</h1>
+            <p class="cs-text">
+                Our team is dedicated to delivering you the best service possible. If you need help navigating our site or have a suggestion on how we can make your improve your experience, please fill out this form or send us an email.
         </div>
-    </section>
+        <div class="cs-right">
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1970" name="Contact Form" method="post">
+                <label class="cs-label">
+                    First Name
+                    <input class="cs-input" required type="text" id="first-name-1970" name="first name">
+                </label>
+                <label class="cs-label">
+                    Last Name
+                    <input class="cs-input" required type="text" id="last-name-1970" name="last name">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1970" name="email">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="tel" id="phone-1970" name="phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <input class="cs-input" required type="text" id="bedrooms-1970" name="bedrooms">
+                </label>
+                <label class="cs-label">
+                    Property Address
+                    <input class="cs-input" required type="text" id="address-1970" name="address">
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Background Image, added in CSS as a background image for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/downtown.jpeg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/downtown.jpeg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/downtown.jpeg" alt="downtown" width="1920" height="640" aria-hidden="true">
+    </picture>
+</section>
 {% endblock %}
