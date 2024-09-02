@@ -1,0 +1,96 @@
+---
+title: 'Listings | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: /listings
+eleventyNavigation:
+    key: Projects
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/listings.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Listings                   -->
+<!-- ============================================ -->
+
+<section id="listing-101">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">All Listings</span>
+            <h2 class="cs-title">View All Listings</h2>
+        </div>
+        
+        <section id="listings-555">
+            <div class="cs-container">
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg" alt="room" width="630" height="354">
+                        </picture>
+                        <div class="cs-content">
+                            <span class="cs-tag">1111 Adam St. Wall, NJ 08730</span>
+                            <h2 class="cs-h2">BAC</h2>
+                            <a href="/project-one" class="cs-button-solid">View Listing</a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg" alt="room" width="630" height="354">
+                        </picture>
+                        <div class="cs-content">
+                            <span class="cs-tag">3333 Toad St. Wall, NJ 08730</span>
+                            <h2 class="cs-h2">BAC</h2>
+                            <a href="" class="cs-button-solid">View Listing</a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room1.jpg" alt="room" width="630" height="354">
+                        </picture>
+                        <div class="cs-content">
+                            <span class="cs-tag">6666 Smith St. Wall, NJ 08730</span>
+                            <h2 class="cs-h2">BAC</h2>
+                            <a href="" class="cs-button-solid">View Listing</a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-background">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg">
+                            <!--Tablet and above Image-->
+                            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg">
+                            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/room2.jpg" alt="room" width="630" height="354">
+                        </picture>
+                        <div class="cs-content">
+                            <span class="cs-tag">9999 Yellow St. Wall, NJ 08730</span>
+                            <h2 class="cs-h2">BAC</h2>
+                            <a href="" class="cs-button-solid">View Listing</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>
+
+{% endblock %}
+
