@@ -112,7 +112,7 @@
     transition: width 0.3s;
   }
   #hero-998 .cs-button-solid:hover {
-    color: #1a1a1a;
+    color: #001f3f;
   }
   #hero-998 .cs-button-solid:hover:before {
     width: 100%;
@@ -133,7 +133,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
+    background: #001f3f;
     opacity: 0.8;
     top: 0;
     left: 0;
